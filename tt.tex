@@ -1,0 +1,186 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+\title{Waves(20) 11.15}
+\author{EE23BTECH11051-Rajnil Malviya}
+\date{January 2024}
+\maketitle
+\subsection*{\textit{Question :-}}
+A train, standing at the outer signal of a railway station blows a whistle of frequency
+400 Hz in still air. (i) What is the frequency of the whistle for a platform observer
+when the train (a) approaches the platform with a speed of $10 ms^{-1} $, (b) recedes
+from the platform with a speed of $10 ms^{-1} $? (ii) What is the speed of sound in each
+case ? The speed of sound in still air can be taken as $340 ms^{-1} $.
+\bigskip
+ This problem requires knowledge of \textit{Doppler Effect} , So first we will learn Doppler effect and then we will solve our problem . Before learning Doppler effect , we will also understand Sound Waves .
+ \begin{table}[h!]
+   
+        \input{tables/para}
+       
+    \end{table}
+\subsection*{Equation of Sound Wave :-}
+Sound Wave is transmission of energy ; sound wave depends on many parameters . A general equation of sound wave is shown below 
+\begin{equation} \label{eq1}
+y(t) = A\sin\brak{2 \pi ft - kx}
+\end{equation}
+
+ \begin{table}[h!]
+   
+        \input{tables/t1}
+       
+    \end{table}
+
+From equation 1 , equation of sound wave when whistle is blown by
+train is 
+\newpage
+$$y(t) = A\sin\brak{2 \pi \times400\times t - k x}$$ 
+\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;for this case $f\;=\;400Hz$\\
+\subsection*{\textit{Physical interpretation of frequency :-}}
+In context of sound waves , frequency represents number of cycles that occur in unit of time . In sound waves Higher frequency corresponds to high pitch and lower frequency corresponds to low pitch . Aging causes thinning of vocal cords , due this pitch become higher in old men and lower in old women .
+\subsection*{\textit{Physical interpretation of Amplitude :-}}
+In context of sound waves , amplitude is magnitude of sound wave . Higher the amplitude results in louder the sound and lower amplitude results in softer sound .
+\subsection*{\textit{Physical interpretation of Wavelength :-}}
+Wavelength of sound waves is distance between two consecutive compressions or rarefactions .
+\subsection*{\textit{Wave number  :-}}
+Wave number(k) is parameter used to represent number of wavelengths per unit distance .
+\begin{align}k=\frac{2  \pi}{\lambda}\end{align}
+\begin{table}[h!]
+        \input{tables/t2}
+    \end{table}
+
+\newpage
+\subsection*{\textit{Velocity of Sound in medium  :-}}
+Velocity of sound (v) differs medium to medium , it influenced by some parameters . 
+ \begin{table}[h!]
+   
+        \input{tables/t3}
+       
+    \end{table}
+v in a particular medium is defined as \begin{align}v=\sqrt{\frac{\gamma  . P}{\rho}}\end{align}
+
+\subsection*{\textit{Doppler Effect for Sound Waves :-}}
+Doppler effect for sound wave refers to change in frequency or pitch of sound wave observed by an observer when there is a relative motion between observer and source .
+
+
+\subsection*{\textit{General \;Equation \;of \;Doppler :-}}
+Now we will see formulas for Doppler effect in different situations . \\
+\begin{align}{\label{eq2}}f' = \frac{v'}{\lambda'}\end{align}
+\begin{align}{\label{eq3}}f = \frac{v}{\lambda}\end{align}
+\begin{align}{\label{eq4}}f' = \frac{v \pm v_o}{\lambda \pm v_s T}\end{align}
+\begin{align}{\label{eq5}}f = \frac{1}{T}\end{align}
+From equations 5 and 7 , then substituting in equation 6
+\begin{align}{\label{eq6}}f' = \frac{\brak{v \pm v_o}f}{v \pm v_s }\end{align}
+Above equation is general equation for any case in doppler effect .
+Signs of equation 8 depends on velocities of both observer and source .
+\subsection*{\textit{Effect \;of  \;observer's  \;velocity\;on \;frequency :-}}
+If observer is moving towards source and source is stationary ($v_s=0)$, then sound will reach observer faster , so observed frequency will increase. It means \begin{align}{\label{eq7}}f'>f\end{align} From equation 8 \begin{align}{\label{eq8}} f' = \frac{\brak{v \pm v_o}f}{v}\end{align}\\
+From equations 10 and 9 , 
+\begin{align} \frac{\brak{v \pm v_o}f}{v} > f\end{align}
+\begin{align}{\label{eq10}} v \pm v_o > v\end{align}
+ There must be (+) sign to satisfy equation 12 .
+And for vice-versa case(observer is moving away) , so frequency will be less than $f_n$
+So ,\begin{align}{\label{eq11}}f'<f\end{align}
+From equation 10 ,
+\begin{align}\frac{\brak{v \pm v_o}f}{v} < f\end{align}
+\begin{align}{\label{eq13}} v \pm v_o < v\end{align}
+There must be (-) sign to satisfy equation 15 .
+\subsection*{\textit{Effect \;of  \;source's  \;velocity\;on \;frequency :-}}
+If source is moving towards stationary observer($v_o =0$), so $\lambda'$ in equation 4 will compress and denominator will decrease , so $f'$ will increase , \begin{align}f'>f\end{align}From equation  8
+\begin{align}f' = \frac{vf}{v \pm v_s}\end{align}\\
+From equations  10 and 5
+\begin{align} \frac{v f}{v \pm v_s} > f\end{align}
+\begin{align}{\label{eq17}} \frac{v}{v \pm v_s} > 1\end{align}
+ There must be (-) sign to satisfy equation  19 .
+And for vice-versa case(source is moving away) , so wavelength will increase and denominator in equation 6 increases so $f'$ will decrease \\
+\begin{align}f'<f\end{align}
+From equation 8
+\begin{align}{\label{eq19}} f' = \frac{vf}{v \pm v_s}\end{align}\\
+From equations 21 and 20 , 
+\begin{align} \frac{v f}{v \pm v_s} < f\end{align}
+\begin{align}{\label{eq21}} \frac{v}{v \pm v_s} < 1\end{align}
+ There must be (+) sign to satisfy equation 23.\\\\
+ $v_o$ and $v_s$ directly affect equation 8 , independent of each other . We can change signs of numerator and denominator independently by analysing situation .\\\\
+    
+Let's get back to our problem solution\\
+(i).a When the train approaches the platform (i.e., the observer at rest),\\\\
+\textit{Solution  :-}\\
+So here source is approaching , wavelength will decrease and frequency will increase , so we have to increase $f' $ \\
+\begin{align}{\label{eq22}}f' = \frac{v f}{v- v_s }\end{align}
+On Substituting in equation 24
+$$f'_a=400\brak{\frac{340}{340-10}}$$
+$$f'=412.1212$$
+\bigskip
+b. When the train recedes the platform (i.e., the observer at rest), \\\\
+\textit{Solution  :-}\\\\
+It is vice-versa of above, From Table:3
+\begin{align}f'=f\brak{\frac{v}{v+v_s}}\end{align}
+$$f'=400\brak{\frac{340}{340+10}}$$
+$$f'=388.5714$$\\
+(ii) The speed of sound in each will be same.It is $340  ms^{-1}$ in each case.\\\\
+From equation 8
+we will interchange $v_o\; and\; v_s$ 
+\begin{align}{\label{eq24}}f_r = f' \brak{\frac{{v \pm v_s}}{v \pm v_o }}\end{align}
+For signs , we will use same logic, if someone is approaching another one , so definitely it will increase frequency($f_r$) and if receding so it will decrease frequency($f_r$) . \\\\
+ In our problem  if , train approaches with $v_s10 ms^{-1} $ and if platform is taken as obstacle with $v_o=0$, \\
+ Received frequency by platform is \textit{f'} 412.1212   , \\
+ Here train(source) is approaching , so $v_s$ will try to increase $f_r$\\
+On substituting in  equation 26
+\begin{align}{\label{eq24}}f_r = f' \brak{\frac{{v \pm v_s}}{v }}\end{align}
+ To increase $f_r$ , there must be (+) sign ;
+ $$f_r = 412.1212\brak{\frac{340 + 10}{340 }}$$
+ $f_r$=424.2424\\ \\So Received signal will be , \\\\
+ From table Table:3
+ $$y_r(t) = A\sin\brak{ 2 \pi  (424.2424)t -kx}$$
+ if train is receding with $10 ms^{-1} $ , so $v_s$ will try to decrease $f_r$
+ so we will use (-) sign in equation 26 with $v_o=0$\\
+  $$f_r =\brak{ \frac{v -v_s}{v }}$$
+  $f'$=388.5714 \\
+  on substituting in equation  26
+  $$f_r = 388.5714 \brak{\frac{340 -10}{340 }}$$
+  $f_r=377.1428$
+ \\ So received signal will be , \\
+ From table Table:3
+ $$y_r(t) = A\sin\brak{2 \pi  (377.1428)t -k x}$$
+\end{document}
